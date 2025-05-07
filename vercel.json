@@ -1,0 +1,28 @@
+{
+  "buildCommand": "npm run build",
+  "cleanUrls": true,
+  "installCommand": "npm install",
+  "outputDirectory": "public",
+  "redirects": [
+    {
+      "destination": "/",
+      "permanent": true,
+      "source": "/www.tnrodrigues.com"
+    },
+    {
+      "destination": "/projects",
+      "permanent": true,
+      "source": "/www.tnrodrigues.com/projects"
+    },
+    {
+      "destination": "/writing",
+      "permanent": true,
+      "source": "/www.tnrodrigues.com/writing"
+    },
+    {
+      "destination": "contact",
+      "permanent": true,
+      "source": "/www.tnrodrigues.comcontact"
+    }
+  ]
+}

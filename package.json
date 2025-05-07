@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "node script.js"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "cheerio": "latest",
+    "ncp": "^2.0.0"
+  }
+}
