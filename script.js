@@ -18,6 +18,7 @@ console.log('Script started');
     'writing.html',
     'projects.html',
     'contact.html',
+    'portfolio.html',
   ];
 
   const publicDir = path.resolve(__dirname, './public');

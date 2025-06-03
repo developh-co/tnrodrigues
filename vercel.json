@@ -20,9 +20,14 @@
       "source": "/www.tnrodrigues.com/writing"
     },
     {
-      "destination": "contact",
+      "destination": "/contact",
       "permanent": true,
-      "source": "/www.tnrodrigues.comcontact"
+      "source": "/www.tnrodrigues.com/contact"
+    },
+    {
+      "destination": "/portfolio",
+      "permanent": true,
+      "source": "/www.tnrodrigues.com/portfolio"
     }
   ]
 }
