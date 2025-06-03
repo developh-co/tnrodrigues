@@ -30,6 +30,21 @@ console.log('Script started');
     path.resolve(publicDir, './framerusercontent.com')
   );
 
+  const assetsDir = path.resolve(__dirname, './assets');
+  if (fs.existsSync(assetsDir)) {
+    const publicAssetsDir = path.resolve(publicDir, './assets');
+    if (!fs.existsSync(publicAssetsDir)) {
+      fs.mkdirSync(publicAssetsDir);
+    }
+    ncp(assetsDir, publicAssetsDir, (err) => {
+      if (err) {
+        console.error('Error copying assets:', err);
+      } else {
+        console.log('Assets copied successfully');
+      }
+    });
+  }
+
   htmlFiles.forEach((file) => {
     const html = fs.readFileSync(path.resolve(__dirname, `./${file}`), 'utf8');
     const $yourSite = cheerio.load(html);
